@@ -21,7 +21,7 @@ function App() {
     <SContainer className="App">
       <button onClick={onClickFetchData}>データ取得</button>
       {todos.map((todo)=> (
-        <Todo title={todo.title} userid={todo.userId}/>
+        <Todo title={todo.title} userId={todo.userId} completed={todo.completed}/>
       ))}
     </SContainer>
   );
